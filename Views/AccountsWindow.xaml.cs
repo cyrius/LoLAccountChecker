@@ -308,6 +308,25 @@ namespace LoLAccountChecker.Views
             await this.ShowMessageAsync("Make Unchecked", "Account state has been changed to Unchecked.");
         }
 
+        private async void CmRemoveErrorClick(object sender, RoutedEventArgs e)
+        {
+            List<Account> accounts = new List<Account>();
+            foreach (Account acc in _accountsGrid.Items)
+            {
+                if (acc.State == Account.Result.Error)
+                {
+                    accounts.Add(acc);
+                }
+            }
+
+            foreach (Account acc in accounts)
+            {
+                Checker.Accounts.Remove(acc);
+            }
+            RefreshAccounts();
+            MainWindow.Instance.UpdateControls();
+        }
+
         private async void CmRemoveClick(object sender, RoutedEventArgs e)
         {
             MessageDialogResult confirm;
