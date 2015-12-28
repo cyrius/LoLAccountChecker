@@ -29,6 +29,7 @@ using System.Windows;
 using LoLAccountChecker.Classes;
 using MahApps.Metro.Controls.Dialogs;
 using Microsoft.Win32;
+using System.Collections.Generic;
 
 #endregion
 

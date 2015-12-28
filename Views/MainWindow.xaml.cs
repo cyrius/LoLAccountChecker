@@ -30,6 +30,7 @@ using System.Windows;
 using LoLAccountChecker.Classes;
 using MahApps.Metro.Controls.Dialogs;
 using Microsoft.Win32;
+using System.Windows.Input;
 
 #endregion
 
@@ -378,6 +379,26 @@ namespace LoLAccountChecker.Views
             window.ShowDialog();
         }
 
+        private void AccountsDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+            if (sender == null) return;
+
+            if (AccountsDataGrid.SelectedItems.Count == 1)
+            {
+                var account = AccountsDataGrid.SelectedItem as Account;
+
+                if (account == null)
+                {
+                    return;
+                }
+
+                var window = new AccountWindow(account);
+                window.Show();
+            }
+        }
+
         #endregion
+
     }
 }
