@@ -23,6 +23,7 @@
                     <MenuItem Header="Copy Combo" Click="CmCopyComboClick" />
                     <MenuItem Header="Make Unchecked" Click="CmMakeUncheckedClick" />
                     <MenuItem Header="Remove" Click="CmRemoveClick" />
+                    <MenuItem Header="Remove All Unvalid Account" Click="CmRemoveErrorClick" />
                 </ContextMenu>
             </DataGrid.ContextMenu>
         </DataGrid>
