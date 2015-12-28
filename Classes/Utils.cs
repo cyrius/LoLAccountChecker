@@ -113,7 +113,7 @@ namespace LoLAccountChecker.Classes
                 {
                     var clientVersion =
                         wc.DownloadString(
-                            "https://raw.githubusercontent.com/madk/LoLAccountChecker/master/League/Client.version");
+                            "https://raw.githubusercontent.com/cyrius/LoLAccountChecker/master/League/Client.version");
 
                     if (Settings.Config.ClientVersion == null)
                     {
