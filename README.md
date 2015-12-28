@@ -30,6 +30,6 @@ You can also import and export checked accounts that you want to see later.
 ### Export
 You can export your accounts to a JSON file (this way you can import it later), or by creating your own layout. Check [Custom Export](https://github.com/madk/LoLAccountChecker/blob/master/Custom%20Export.md) to see the variables and some examples.
 
-Update : 
- When you import a txt file the selected region is applied to these account
- On the main window you can double-click on a row to open the view window
+Update :
+- When you import a txt file the selected region is applied to these account
+- On the main window you can double-click on a row to open the view window
