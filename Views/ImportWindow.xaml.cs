@@ -57,6 +57,7 @@ namespace LoLAccountChecker.Views
         {
             foreach (var account in _accounts.Where(a => Checker.Accounts.All(aa => aa.Username != a.Username)))
             {
+                account.Region = (Region)RegionBox.SelectedIndex;
                 Checker.Accounts.Add(account);
             }
             
